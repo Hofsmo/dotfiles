@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'godlygeek/tabular'
 	Plug 'plasticboy/vim-markdown'
 	Plug 'chrisbra/csv.vim'
+	Plug 'lervag/vimtex'
 call plug#end()
 
 " Filetype stuff

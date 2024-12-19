@@ -17,6 +17,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', {'tag': '0.1.x'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'stephpy/vim-yaml'
+Plug 'knubie/vim-kitty-navigator', {'do': 'cp ./*.py ~/.config/kitty/'}
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -28,7 +29,6 @@ call plug#end()
 imap <S-Insert> <C-R>*
 
 " Enable Python3
-let g:python3_host_prog = 'C:\Users\sigurdj\AppData\Local\Programs\Python\Python310\python.exe'
 
 " Colorscheme
 colorscheme gruvbox
@@ -89,8 +89,12 @@ au BufNewFile,BufRead *.tikz set filetype=tex
  syntax enable
  " Viewer options: One may configure the viewer either by specifying a built-in
  " viewer method:
- let g:vimtex_general_viewer = 'SumatraPDF'
+ let g:vimtex_general_viewer = 'zathura'
+ let g:vimtex_view_method = "zathura"
 
  let g:tex_flavor = 'latex'
 
  syntax on
+
+ " Clipboard
+ set clipboard+=unnamedplus

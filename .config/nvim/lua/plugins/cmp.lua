@@ -74,5 +74,8 @@ return {
       require('lspconfig')['latex'].setup {
       capabilities=capabilities
     }
+      require('lspconfig')['yamlls'].setup {
+      capabilities=capabilities
+    }
   end
 }

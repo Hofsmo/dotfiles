@@ -6,7 +6,7 @@ return {
  
     configs.setup({
       ensure_installed = {
-        "lua", "vim", "vimdoc", "elixir", "javascript", "html", "python", "typescript", "julia"
+        "lua", "vim", "vimdoc", "elixir", "javascript", "html", "python", "typescript", "julia", "yaml"
       },
       sync_install = false,
       highlight = { enable = true },

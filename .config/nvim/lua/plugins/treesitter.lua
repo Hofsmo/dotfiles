@@ -6,11 +6,11 @@ return {
  
     configs.setup({
       ensure_installed = {
-        "lua", "vim", "vimdoc", "elixir", "javascript", "html", "python", "typescript", "julia", "yaml"
+        "c", "lua", "vim", "vimdoc", "elixir", "javascript", "html", "python", "typescript", "julia", "julia"
       },
       sync_install = false,
       highlight = { enable = true },
-      indent = { enable = true },
+      indent = { enable = false },
     })
   end
 }
